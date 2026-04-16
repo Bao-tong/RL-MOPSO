@@ -9,3 +9,4 @@
    (2) Friedman_results for twelve algorithms; 
    (3) Holm_results for twelve algorithms. 
 4. Case_study_results: six algorithms based on topological structures results based on two cases.
+5. Effectiveness of the Q-learning: three operators(Gbest. DPRT and IVT)' selection probabilities of RLT-MOPSO and RT-MOPSO based on DTLZ2, WFG8, and Viennet3
