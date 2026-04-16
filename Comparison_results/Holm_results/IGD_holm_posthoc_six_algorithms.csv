@@ -1,0 +1,7 @@
+﻿Algorithm,Ranking,p_value,Holm,Hypothesis
+MOPSO-Gbest,3.059,3.35E-03,6.71E-03,Rejected
+MOPSP-DPRT,3.059,3.35E-03,6.71E-03,Rejected
+MOPSO-IVT,3.529,2.46E-04,7.37E-04,Rejected
+MOPSO-Von-Neumann,4.412,4.61E-07,1.84E-06,Rejected
+RT-MOPSO,5.765,8.66E-13,4.33E-12,Rejected
+RLT-MOPSO,1.176,—,—,—
