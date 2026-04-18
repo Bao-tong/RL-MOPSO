@@ -1,0 +1,63 @@
+function IPosition=MemoryFindPosition(pop,f1,f2,f3)
+
+            if Dominates(pop(f2).Best, pop(f1).Best)
+               A=1;
+            else
+                A=0;
+            end
+            
+            if Dominates(pop(f1).Best, pop(f2).Best)
+               B=1;
+            else
+                B=0;
+            end
+                 
+            if Dominates(pop(f2).Best, pop(f3).Best)
+               C=1;
+            else
+                C=0;
+            end
+            
+            if Dominates(pop(f3).Best, pop(f2).Best)
+               D=1;
+            else
+                D=0;
+            end
+            
+            if Dominates(pop(f1).Best, pop(f3).Best)
+               E=1;
+            else
+                E=0;
+            end
+            
+            if Dominates(pop(f3).Best, pop(f1).Best)
+               F=1;
+            else
+                F=0;
+            end
+            
+           if (A==1&&C==1)||(A==1&&E==1)|| (C==1&&F==1)    
+                IPosition=pop(f2).Best.Position;
+            end
+            if (B==1&& E==1)||(B==1&&C==1)|| (D==1&&E==1) 
+               IPosition=pop(f1).Best.Position;
+            end
+            if (D==1 && F==1)||(A==1&&D==1)|| (B==1&&F==1)
+               IPosition=pop(f3).Best.Position;
+            end
+            
+            if (A==1 && F==1&&C==0&&D==0)||(A==1&&C==0&&D==0&&E==0&&F==0)||(F==1&&A==0&&B==0&&C==0&&D==0)
+              IPosition=pop(randsample([f2,f3], 1)).Best.Position;
+            end
+            if (C==1 && E==1&&A==0&&B==0)||(C==1&&A==0&&B==0&&E==0&&F==0)||(E==1&&A==0&&B==0&&C==0&&D==0)
+              IPosition=pop(randsample([f2,f1], 1)).Best.Position;
+            end
+            if (B==1 && D==1&&E==0&&F==0)||(B==1&&C==0&&D==0&&E==0&&F==0)||(D==1&&A==0&&B==0&&E==0&&F==0)
+              IPosition=pop(randsample([f3, f1], 1)).Best.Position;
+            end            
+             if A==0 && B==0&&C==0&&D==0&&E==0&&F==0
+              IPosition=pop(randsample([f2 , f3, f1], 1)).Best.Position;
+            end           
+
+
+end
