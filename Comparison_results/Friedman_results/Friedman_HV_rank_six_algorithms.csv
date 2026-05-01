@@ -1,8 +1,0 @@
-﻿Algorithm,"DTLZ: DTLZ2, 4-7",,WFG: WFG1-9,,Viennet: Viennet 1-3,,Total,
-,Friedman test,Rank,Friedman test,Rank,Friedman test,Rank,Friedman test,Rank
-MOPSO-Gbest,6,6,5.8889,6,4.3333,5,5.6471,6
-MOPSO-DPRT,4.2,5,2.7778,2,5.3333,6,3.6471,3
-MOPSO-Von-Neumann,2.4,2,3.2222,3,3.3333,3,3,2
-MOPSO-IVT,4,4,3.5556,4,3.6667,4,3.7059,4
-RT-MOPSO,3.4,3,4.4444,5,3.3333,2,3.9412,5
-RLT-MOPSO,1,1,1.1111,1,1,1,1.0588,1
